@@ -36,14 +36,14 @@ void loop() {
 
   if (blueButtonState == HIGH && redButtonState == HIGH) {
     
-    // Trigger the ultrasonic sensor
+    // ultrasonic sensor
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
     digitalWrite(trigPin, HIGH);
     delayMicroseconds(10);
     digitalWrite(trigPin, LOW);
 
-    // Measure the echo time
+    // echo time
     long duration = pulseIn(echoPin, HIGH);
     int distance = duration * 0.034 / 2;
     
