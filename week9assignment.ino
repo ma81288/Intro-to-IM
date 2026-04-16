@@ -31,12 +31,6 @@ void loop() {
  
   int sensorValue = analogRead(A0);
   
-
-  Serial.print("Sensor: ");
-  Serial.print(sensorValue);
-  Serial.print(" | System: ");
-  Serial.println(systemOn);
-  
   
   if (systemOn == 1) {
    
